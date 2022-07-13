@@ -1,0 +1,20 @@
+@import 'color';
+.product__left {
+    background-color: $backgroundColorTransparent;
+    border-radius: 15px;
+    padding: 22px 80px;
+    border: 1px solid $neutrol-0;
+    width: 48%;
+    .product {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    .product__information {
+        &__item {
+            padding: 4px;
+            background-color: $backgroundColorTransparent;
+            margin-right: 2px;
+            border-radius: 2px;
+        }
+    }
+}

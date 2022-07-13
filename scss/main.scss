@@ -1,0 +1,106 @@
+@import 'color';
+@import 'form';
+@import 'button';
+@import 'introduct_item';
+@import 'product_item';
+@import 'controler';
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    line-height: 1.5;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+    outline: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+body {
+    background-image: linear-gradient( to right, #853FA2, #9E3F74, #B83930);
+}
+
+.main {
+    height: 100vh;
+}
+
+#btn__login {
+    @include button;
+}
+
+.controler {
+    .controler__right {
+        .add_to_cart {
+            font-weight: bold;
+            color: $green;
+            // display: inline;
+            padding: 9px;
+            background: $greenColorTransparent;
+            border-radius: 10px;
+            transition: all 0.4s;
+            cursor: pointer;
+            .fa-bag-shopping {
+                position: relative;
+            }
+            .fa-bag-shopping::after {
+                position: absolute;
+                content: "";
+                border-right: 1px dashed $greenColorTransparent;
+                height: 100%;
+                top: 0;
+                right: 0;
+            }
+            &:hover {
+                color: white;
+                background-color: $greenColorTransparent - 50;
+            }
+        }
+        h2 {
+            margin-right: 20px;
+            font-size: 25px;
+            margin-bottom: 0;
+            ;
+        }
+    }
+}
+
+.product__right {
+    max-height: 700px;
+    overflow-y: auto;
+}

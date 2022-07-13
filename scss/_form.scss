@@ -1,0 +1,17 @@
+@import 'color';
+form {
+    background-color: $backgroundColorTransparent;
+    width: 500px;
+    height: 70%;
+    border-radius: 10px;
+    border: 1px solid white;
+    padding: 4rem;
+    .form-group {
+        input {
+            background-color: $backgroundColorTransparent;
+            padding: 1.5rem;
+            border-radius: 0;
+            border: none;
+        }
+    }
+}

@@ -1,0 +1,33 @@
+@import 'color';
+@import 'introduct_item';
+@mixin btnHoverGreen {
+    padding: 10px;
+    background: $backgroundColorTransparent;
+    border-radius: 10px;
+    border: 1px solid $neutrol-0;
+    color: white;
+}
+
+.item {
+    background: $blackColorTransparent;
+    border-radius: 10px;
+    transition: all 0.3s;
+    img.product {
+        max-width: 60%;
+        margin: 0 auto;
+    }
+    &:hover {
+        background: rgba(0, 0, 0, 0.5);
+    }
+}
+
+.item__card--btn {
+    @include btnHoverGreen;
+    border: 1px solid rgba(255, 255, 255, 0);
+    transition: all 0.3s;
+    cursor: pointer;
+    &:hover {
+        color: $green;
+        border: 1px solid rgba(255, 255, 255, 1);
+    }
+}

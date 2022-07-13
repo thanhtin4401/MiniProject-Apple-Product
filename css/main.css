@@ -1,0 +1,250 @@
+form {
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 500px;
+  height: 70%;
+  border-radius: 10px;
+  border: 1px solid white;
+  padding: 4rem;
+}
+
+form .form-group input {
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 1.5rem;
+  border-radius: 0;
+  border: none;
+}
+
+.product__left {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 15px;
+  padding: 22px 80px;
+  border: 1px solid white;
+  width: 48%;
+}
+
+.product__left .product {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.product__left .product__information__item {
+  padding: 4px;
+  background-color: rgba(255, 255, 255, 0.3);
+  margin-right: 2px;
+  border-radius: 2px;
+}
+
+.product__left {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 15px;
+  padding: 22px 80px;
+  border: 1px solid white;
+  width: 48%;
+}
+
+.product__left .product {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.product__left .product__information__item {
+  padding: 4px;
+  background-color: rgba(255, 255, 255, 0.3);
+  margin-right: 2px;
+  border-radius: 2px;
+}
+
+.item {
+  background: rgba(0, 0, 0, 0.22);
+  border-radius: 10px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.item img.product {
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+.item:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.item__card--btn {
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  border: 1px solid white;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.item__card--btn:hover {
+  color: #A6FEC2;
+  border: 1px solid white;
+}
+
+.controler__btn {
+  background-color: rgba(255, 255, 255, 0.3);
+  border: 1px solid white;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+.controler__btn--minus {
+  position: relative;
+  padding: 10px;
+}
+
+.controler__btn--minus:hover i {
+  color: #A6FEC2;
+}
+
+.controler__btn--minus::after {
+  position: absolute;
+  content: "";
+  top: 25%;
+  right: 0;
+  height: 20px;
+  border-right: 1px solid;
+  padding-right: 0;
+}
+
+.controler__btn .number {
+  padding: 10px 5px;
+}
+
+.controler__btn--plus {
+  position: relative;
+  padding: 10px;
+  -webkit-transition: all 3s;
+  transition: all 3s;
+}
+
+.controler__btn--plus:hover i {
+  color: #A6FEC2;
+}
+
+.controler__btn--plus::before {
+  position: absolute;
+  content: "";
+  top: 25%;
+  left: 0;
+  height: 20px;
+  border-right: 1px solid;
+  padding-right: 0;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  outline: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+body {
+  background-image: -webkit-gradient(linear, left top, right top, from(#853FA2), color-stop(#9E3F74), to(#B83930));
+  background-image: linear-gradient(to right, #853FA2, #9E3F74, #B83930);
+}
+
+.main {
+  height: 100vh;
+}
+
+#btn__login {
+  display: block;
+  padding: 1rem;
+  background-color: black;
+  width: 100%;
+  color: white;
+  border-radius: 10px;
+  font-weight: bold;
+  border-radius: 0;
+}
+
+.controler .controler__right .add_to_cart {
+  font-weight: bold;
+  color: #A6FEC2;
+  padding: 9px;
+  background: rgba(177, 234, 194, 0.5);
+  border-radius: 10px;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+
+.controler .controler__right .add_to_cart .fa-bag-shopping {
+  position: relative;
+}
+
+.controler .controler__right .add_to_cart .fa-bag-shopping::after {
+  position: absolute;
+  content: "";
+  border-right: 1px dashed rgba(177, 234, 194, 0.5);
+  height: 100%;
+  top: 0;
+  right: 0;
+}
+
+.controler .controler__right .add_to_cart:hover {
+  color: white;
+  background-color: rgba(127, 184, 144, 0.5);
+}
+
+.controler .controler__right h2 {
+  margin-right: 20px;
+  font-size: 25px;
+  margin-bottom: 0;
+}
+
+.product__right {
+  max-height: 700px;
+  overflow-y: auto;
+}
+/*# sourceMappingURL=main.css.map */

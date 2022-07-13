@@ -1,0 +1,48 @@
+@import 'color';
+.controler__btn {
+    background-color: $backgroundColorTransparent;
+    border: 1px solid $neutrol-0;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    &--minus {
+        position: relative;
+        padding: 10px;
+    }
+    &--minus:hover {
+        i {
+            color: $green;
+        }
+    }
+    &--minus::after {
+        position: absolute;
+        content: "";
+        top: 25%;
+        right: 0;
+        height: 20px;
+        border-right: 1px solid;
+        padding-right: 0;
+    }
+    .number {
+        padding: 10px 5px;
+    }
+    &--plus {
+        position: relative;
+        padding: 10px;
+        transition: all 3s;
+    }
+    &--plus:hover {
+        i {
+            color: $green;
+        }
+    }
+    &--plus::before {
+        position: absolute;
+        content: "";
+        top: 25%;
+        left: 0;
+        height: 20px;
+        border-right: 1px solid;
+        padding-right: 0;
+    }
+}
