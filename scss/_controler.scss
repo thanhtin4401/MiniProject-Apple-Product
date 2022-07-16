@@ -1,4 +1,7 @@
 @import 'color';
+
+
+// controler increase and decrease amount
 .controler__btn {
     background-color: $backgroundColorTransparent;
     border: 1px solid $neutrol-0;
@@ -11,7 +14,7 @@
     }
     &--minus:hover {
         i {
-            color: $green;
+            color: $greenColor;
         }
     }
     &--minus::after {
@@ -33,7 +36,7 @@
     }
     &--plus:hover {
         i {
-            color: $green;
+            color: $greenColor;
         }
     }
     &--plus::before {

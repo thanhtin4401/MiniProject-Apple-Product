@@ -27,7 +27,7 @@
     transition: all 0.3s;
     cursor: pointer;
     &:hover {
-        color: $green;
+        color: $greenColor;
         border: 1px solid rgba(255, 255, 255, 1);
     }
 }

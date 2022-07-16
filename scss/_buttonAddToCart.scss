@@ -1,0 +1,26 @@
+@import 'color';
+.add_to_cart {
+    font-weight: bold;
+    color: $greenColor;
+    // display: inline;
+    padding: 9px;
+    background: $greenColorTransparent;
+    border-radius: 10px;
+    transition: all 0.4s;
+    cursor: pointer;
+    .fa-bag-shopping {
+        position: relative;
+    }
+    .fa-bag-shopping::after {
+        position: absolute;
+        content: "";
+        border-right: 1px dashed $greenColorTransparent;
+        height: 100%;
+        top: 0;
+        right: 0;
+    }
+    &:hover {
+        color: white;
+        background-color: $greenColorTransparent - 50;
+    }
+}
